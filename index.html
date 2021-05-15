@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? family = Newsreader: wght @ 300 & display = swap"
+        rel="hoja de estilo">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrales</title>
+    <link rel="shortcut icon" href="img/107831.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contatos</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Integrales</h1>
+            <h2></h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #ffffff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Tipos de integrales</h2>
+            <div class="contenedor-sobre-nosotros">
+                <!--<img src="img/ilustracion1.jpg" alt="" class="imagen-about-us">-->
+
+                <div class="contenidos-textos">
+                    <p>Exiten dos tipos de integrales las Definidas y las Indefinidas, y
+                        la diferencia entre estas radica en que la integral definida
+                        indica el área que ocupa el espacio bajo la curva de una función f(x) en
+                        un rango definido, donde b es el limite inferior y a el limite superior. Por el contrario la
+                        integral indefinida no indica el area de espacio.
+                    </p>
+                    <h3><span>1</span>Integrales Definidas</h3>
+                    <p>Las integrales definidas se caracterizan por contar con un par de limites (a y b) donde a es el
+                        limite
+                        superior y b es el limite inferior. Estos valores (a y b) son aquellos que nos
+                        indicaran el espacio bajo la curva de una función (x).
+                    </p>
+                    <div class="ConIntegralDefinida">
+                        <div class="Imagenintdef">
+                            <img src="img/integraldefinida.png" alt="" class="imagen-about-us">
+                            <div class="contenido-texto-integraldefinida">
+                                <p>[Figura1]</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Como se puede observar en la [Figura 1] esta integral tiene dos limites impuestos, donde a es
+                        limite inferior y b es el limite superior.
+                    </p>
+                    <h3><span>2</span>Integrales Indefinidas</h3>
+                    <p>Como su nombre bien lo dice esta integral no esta definidad, es decir que a diferencia de la
+                        anterior
+                        esta no tiene ningun tipo de limites.
+                    </p>
+                    <div class="ConIntegralDefinida">
+                        <div class="Imagenintdef">
+                            <img src="img/integralindefinida.png" alt="" class="imagen-about-us">
+                            <div class="contenido-texto-integraldefinida">
+                                <p>[Figura2]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>No todas las integrales pueden resolverse de manera directa usando las integrales estándar.
+                        Sin embargo, en la mayoria de las ocaciones la integral dada puede reducirse a una integral estándar ya
+                        conocida, para hacer esto existen varias formulas entre ellas tenemos a:
+                    </p>
+                    <div class="hipervinculos">
+
+                        <u>
+                            <li><a href="#Integralesporcambiodevariable">Integrales por cambio de variable</a></li>
+                        </u>
+                        <u>
+                            <li><a href="#Integralesporpartes">Integracion por partes</a></li>
+                        </u>
+                        <u>
+                            <li><a href="#Integralestrigonometricas">Integrales Trigonometricas</a></li>
+                        </u>
+                        <u>
+                            <li><a href="#Integralestrigonometricas1">Integrales Trigonometricas (Tipo 1)</a></li>
+                        </u>
+                        <u>
+                            <li><a href="#Integralestrigonometricas2">Integrales Trigonometricas (Tipo 2)</a></li>
+                        </u>
+                        <u>
+                            <li><a href="#Integralestrigonometricas3">Integrales Trigonometricas (Tipo 3)</a></li>
+                        </u>
+                        <u>
+                            <li><a href="#Integralestrigonometricas4">Integrales Trigonometricas (Tipo 4)</a></li>
+                        </u>
+                        <u>
+                            <li><a href="#Integralestrigonometricas5">Integrales Trigonometricas (Tipo 5)</a></li>
+                        </u>
+                        <u>
+                            <li><a href="#Integralesporsustituciontrigonometrica">Integrales por Sustitucion Trigonometrica</a></li>
+                        </u>
+
+                    </div>
+
+                    <h3 id="Integralesporcambiodevariable">Integrales por cambio de variable</h3>
+                    <p>Un cambio en la variable de integración o tambien conocido como
+                        método de sustitución, corresponde a la regla de la cadena en diferenciación. Suponga que
+                        F es una anti derivada (integral) de f, de modo que</p>
+
+                        <div class="Formulas">                        
+                                <i><p>∫ f (x) dx = F(x)+c</p></i>
+                        </div>
+
+                        <p>En la ecuacion se podria relizar el cambio donde <b>x = u</b> y <b>dx = du</b> donde dx es la derivada de x</p>
+
+                        <div class="Formulas">                        
+                            <i><p>∫ f (u) du = F(u)+c</p></i>
+                        </div>
+
+                        <div class="Ejemplo">
+                            <h1>Ejemplos</h1>
+                            <h4>Ejemplo #1 por cambio de variables</h4>
+                        </div>
+
+
+                        <div class="Formulas">                        
+                            <i><p>∫ f (x<sup>2</sup>+3x-7)<sup>5</sup> (2x+3)dx = F(x)+c</p></i>
+                        </div>
+
+                        <p>Donde remplazaremos (x<sup>2</sup>+3x-7) por U y (2x+3) por du. </p>
+
+                        <div class="Formulas">                        
+                            <i><p>∫ u<sup>5</sup> du</p></i>
+                        </div>
+
+                        <p>Ya con la integral de esta manera podemos usar la integral estandar de:</p>
+
+                        <div class="Formulas">                        
+                            <img src="img/formulaexpo.png" alt="" class="formuR">
+                            <img src="img/flecha.png" alt="" class="formu">
+                            <img src="img/Ejemplo1.jpg" alt="" class="formuR">
+                        </div>
+                        <p></p>
+                        <p>Despues de haber resuelto la integral faltaria volver
+                            a remplazar u y sumar la constante de integracion.
+                            Sin mas que hacer esta integral quedaria así
+                        </p>
+
+                        <div class="Formulas">                        
+                            <img src="img/Ejemplo1R.png" alt="" class="formuR">
+                        </div>
+                        
+                        <div class="Ejemplo">
+                            <h4>Ejemplo#2 de cambio de variables</h4>
+                        </div>
+                        
+                        <div class="Formulas">                        
+                            <img src="img/Ejemplo2.png" alt="" class="formuR">
+                        </div>
+                        <p></p>
+                        <p>Para este caso tomaremos a u=x<sup>2</sup>-5x y du (derivada de u) como 2x-5 dx</p>
+
+                        <div class="Formulas">                        
+                            <img src="img/CV1.png" alt="" class="formuR">
+                        </div>
+                        <p></p>
+                        <p>Al aplicar el cambio de variable nos quedaria asi:</p>
+                        <div class="Formulas">                        
+                            <img src="img/formulae^2ps1.png" alt="" class="formuR">
+                        </div>
+                        <p>Esta es una de las   <a href="https://202110.aulasuniminuto.edu.co/pluginfile.php/654694/mod_resource/content/1/Tablas%20de%20integrales.pdf"
+                            target="_blank">Integrales establecidas</a></p>
+                        
+                        <div class="Formulas">                        
+                            <img src="img/formulae^e.png" alt="" class="formuR">
+                            <img src="img/flecha.png" alt="" class="formu">
+                            <img src="img/formulae^2.png" alt="" class="formuR">
+                        </div>
+
+                        <p>Ya por ultimo se remplaza el valor de u y con eso se termina el ejercio</p>
+
+                        <div class="Formulas">                        
+                            <img src="img/formulae^2R.png" alt="" class="formuR">
+                        </div>
+                        <p><a href="https://202110.aulasuniminuto.edu.co/pluginfile.php/777852/mod_resource/content/2/TUTOR%C3%8DA%2004-03-21.pdf"
+                            target="_blank">Mas ejemplos</a> resueltos de Integracion por cambio de variable</p>
+
+                    <h3 id="Integralesporpartes">Integracion por partes</h3>
+                    <p>Una de las técnicas de integración más ampliamente usadas es la integración por partes, la cual
+                        se obtiene mediante la fórmula para la derivada del producto de dos funciones. Si f y g son
+                        funciones diferenciables, entonces:</p>
+                        <div class="Formulas">                        
+                            <img src="img/porpartes.png" alt="" class="formuRl">
+                        </div>
+
+                        <p>La fórmula anterior recibe el nombre de fórmula de integración por partes. Para los
+                            propósitos de cálculo, la fórmula más conveniente de esta fórmula se obtiene al considerar:</p>
+                           <p> <b>u = f(x)</b> y <b>v = g(x)</b> </p>
+                            <p>Entonces</p>
+                            <p> <b>du = f'(x)dx</b> y <b>dv = g'(x)dx</b> </p>
+                             
+                            <p>de modo que la ecuación se transforma en</p>
+
+                            <div class="Formulas">                        
+                                <img src="img/porpartestrans.png" alt="" class="formuRl">
+                            </div>
+                        <p>Para determinar la elección de <b>u</b> tomamos en cuenta el siguiente orden <b>ILATE</b>  (<b>I</b>nversas-<b>L</b>ogarítmica-
+                            <b>A</b>lgebraica-<b>T</b>rigonométrica-<b>E</b>xponencial) y para <b>dv</b> tomamos el factor más
+                        complejo del integrando y puede integrarse directamente.</p>
+                        <div class="Ejemplo">
+                            <h4>Ejemplo#1 de integracion por partes.</h4><p>Resuelve el siguiente ejercicio</p>
+                        </div>
+                        <div class="Formulas">                        
+                            <img src="img/porpartesejemplo.png" alt="" class="formuR">
+                        </div>
+                        <p>Para elegir <b>u</b> tenemos en cuenta el orden mencionado anteriormente (ILATE), por tanto <b>u</b> debe ser la función
+                            logarítmica y por consiguiente <b>dv</b> debe ser la otra parte del integrando. Entonces tenemos lo
+                            siguiente:</p>
+
+                         <div class="Formulas">
+                            <img src="img/porpartesejemplocv.png" alt="" class="formuRl">    
+                        </div>
+                        <p>Para obtener <b>du</b>  derivamos <b>u</b> y para obtener <b>v</b> integramos <b>dv</b>.</p>
+                        <div class="Formulas">
+                            <img src="img/porpartesejemplocv2.png" alt="" class="formuRl">    
+                        </div>
+                        <p>Al sustituir los valores en la formula ∫ u dv = uv − ∫ v du, obtenemos lo siguiente:</p>
+                        <div class="Formulas">
+                            <img src="img/porpartesejemplocvdes.png" alt="" class="formuRl">    
+                        </div>
+                        <p>Al organizar el problema nos quedaria asi:</p>
+                        <div class="Formulas">
+                            <img src="img/porpartesejemplocvdes1.png" alt="" class="formuRl">    
+                        </div>
+                        <p>Por ultimo se resuelven las integrales faltantes.</p>
+                        <div class="Formulas">
+                            <img src="img/porpartesejemplocvdes2.png" alt="" class="formuRl">    
+                        </div>
+                        <p>Al resolver las integrales este ejercicio queda resuelto.</p>
+                        <div class="Ejemplo">
+                            <h4>Ejemplo#2 de integracion por partes.</h4><p>Resuelve el siguiente ejercicio</p>
+                        </div>
+                        <div class="Formulas">                        
+                            <img src="img/porpartesejemplo2.png" alt="" class="formuR">
+                        </div>
+                        <p>Al igual que en el ejercicio anterior en este tambien se debe usar el orden (ILATE)
+                            por lo tanto <b>u</b> debe ser la función Algebraica  y por consiguiente <b>dv</b> debe ser la otra parte del integrando. Entonces tenemos lo
+                            siguiente:</p>
+                        <div class="Formulas">                        
+                           <img src="img/porpartesejemplo2cv.png" alt="" class="formuRl">
+                        </div>
+                        <p>Para obtener <b>du</b>  derivamos <b>u</b> y para obtener <b>v</b> integramos <b>dv</b>.</p>
+                        <div class="Formulas">                        
+                            <img src="img/porpartesejemplo2cv2.png" alt="" class="formuRl">
+                         </div>
+                         <p>Al sustituir los valores en la formula ∫ u dv = uv − ∫ v du, obtenemos lo siguiente:</p>
+                         <div class="Formulas">                        
+                            <img src="img/porpartesejemplo2cvdes.png" alt="" class="formuRl">
+                         </div>
+                         <p>Se resuelven las integrales faltantes.</p>
+                         <div class="Formulas">                        
+                            <img src="img/porpartesejemplo2cvdes2.png" alt="" class="formuRl">
+                         </div>
+                         <p>Para terminar multiplicamos los signos [-(-cosx)] Y de esta manera quedaria este ejercicio.</p>
+                         <div class="Formulas">                        
+                            <img src="img/porpartesejemplo2cvdesR.png" alt="" class="formuRl">
+                         </div>
+                         
+                        <div class="Ejemplo">
+                            <h4>Ejemplo#3 de integracion por partes.</h4><p>Resuelve el siguiente ejercicio</p>
+                        </div>
+
+                        <div class="Formulas">
+                            <img src="img/porpartesejemplo3.png" alt="" class="formuR">
+                        </div>
+
+                        <p>Al igual que en el ejercicio anterior en este tambien se debe usar el orden (ILATE)
+                            por lo tanto <b>u</b> debe ser la función Inversa y por consiguiente <b>dv</b> debe ser la otra parte del integrando. Entonces tenemos lo
+                            siguiente:</p>
+
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cv.png" alt="" class="formuRl">    
+                            </div>
+                            <p>Para obtener <b>du</b>  derivamos <b>u</b> y para obtener <b>v</b> integramos <b>dv</b>.</p>
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cv2.png" alt="" class="formuRl">    
+                            </div>
+                            <p>Al sustituir los valores en la formula ∫ u dv = uv − ∫ v du, obtenemos lo siguiente:</p>
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cvdes.png" alt="" class="formuRl">    
+                            </div>
+                            <p>Al ordenar la ecuacion nos quedaria asi:</p>
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cvdes2.png" alt="" class="formuRl">    
+                            </div>
+                            <p>Al tener la integral asi se debe realizar un cambio de variable</p>
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cvcv2.png" alt="" class="formuv">    
+                            </div>
+                            <p>ahora el cambio de variable se implementa en la integral</p>
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cvcv2des.png" alt="" class="formuRl">    
+                            </div>
+                            <p>Ordenamos la integral de tal manera:</p>
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cvcv2des2.png" alt="" class="formuRl">    
+                            </div>
+                            <p>Ahora se resuelve la integral</p>
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cvcv2des3.png" alt="" class="formuRl">    
+                            </div>
+                            <p>Por ultimo se remplaza los cambios de variables</p>
+                            <div class="Formulas">
+                                <img src="img/porpartesejemplo3cvcv2des4.png" alt="" class="formuRl">    
+                            </div>
+                            <p><a href="https://202110.aulasuniminuto.edu.co/pluginfile.php/821382/mod_resource/content/2/INTEGRACI%C3%93N%20POR%20PARTES.pdf"
+                                target="_blank">Mas ejemplos</a> resueltos de Integracion por partes</p>
+                           
+                    <h3 id="Integralestrigonometricas">Integrales Trigonometricas </h3>
+                    <p>Cuando hemos combinado el método de sustitución con un uso adecuado de identidades
+                        trigonométricas, podemos integrar una gran variedad de formas trigonométricas.
+                        Consideremos cinco tipos encontrados comúnmente.</p>
+
+                        <p>Para la solución de las integrales trigonometrías debemos tener en cuenta las identidades
+                            pitagóricas e identidades del ángulo medio</p>
+                        
+                        <div class="Formulas">
+                              <img src="img/Identidades.png" alt="" class="formui">    
+                        </div>
+
+                    <p>tan<sup>2</sup></p>
+
+                    <h3 id="Integralestrigonometricas1">Integrales Trigonometricas (Tipo 1)</h3>
+                    <p>En las integrales Trigonometricas de tipo 1 nos encontramos con dos casos bastantes peculiares.</p>
+                    <div class="Formulas">
+                        <img src="img/trigotipo1.png" alt="" class="formuRl">    
+                    </div>
+                    <p>Las tipo 1 siempre estan conformadas por sen(x) y cos (x) y estas siempre
+                         llevan esta misma formula donde <b>n</b> puede ser un numero par o impar</p>
+
+                         <div class="Ejemplo">
+                            <h4>Ejemplo#1 de Integracon Trigonometrica tipo 1.</h4><p>Resuelve el siguiente ejercicio</p>
+                        </div>
+
+                    <div class="Formulas">
+                          <img src="img/trigotipo1ej.png" alt="" class="formuR">    
+                    </div>
+
+                    <p>Lo primero que se debe hacer es convertir <b>n</b> en un numero par, para ello se lleva a cabo el siguiente paso</p>
+                    <div class="Formulas">
+                        <img src="img/trigotipo1ejpaso1.png" alt="" class="formuR">    
+                   </div>
+                   <p>una vez que <b>n</b> sea un numero par se toma la primera parte de la integral y se divide de modo que halla un sen <sup>2</sup></p>
+                   <div class="Formulas">
+                    <img src="img/trigotipo1ejpaso2.png" alt="" class="formuR">    
+                   </div>
+                   <p>una vez tengamos sen <sup>2</sup> usamos la identidad trigonometrica correspondiente.</p>
+                   <div class="Formulas">
+                    <img src="img/identida1.png" alt="" class="formuI">    
+                   </div>
+                   <p>Esta formula la adecuamos de manera que.</p>
+                   <div class="Formulas">
+                    <img src="img/identida1sen.png" alt="" class="formuI">    
+                   </div>
+                   <p>ahora se aplica esta identida a la integral</p>
+                   <div class="Formulas">
+                    <img src="img/trigotipo1ejpa1.png" alt="" class="formuRl">    
+                   </div>
+                    <h3 id="Integralestrigonometricas3">Integrales Trigonometricas (Tipo3)</h3>
+                    <p>Exiten dos tipos de integrales las Definidas y las Indefinidas, y
+                        la diferencia entre estas radica en que la integral definida
+                        indica el área que ocupa el espacio bajo la curva de una función f(x) en
+                        un rango definido, donde b es el limite inferior y a el limite superior. Por el contrario la
+                        integral indefinida no indica el area de espacio.
+                        Exiten dos tipos de integrales las Definidas y las Indefinidas, y
+                        la diferencia entre estas radica en que la integral definida
+                        indica el área que ocupa el espacio bajo la curva de una función f(x) en
+                        un rango definido, donde b es el limite inferior y a el limite superior. Por el contrario la
+                        integral indefinida no indica el area de espacio.</p>
+
+                    <p>tan<sup>2</sup></p>
+
+
+                    <a href="https://202110.aulasuniminuto.edu.co/pluginfile.php/654694/mod_resource/content/1/Tablas%20de%20integrales.pdf"
+                        target="_blank">Tablas de integrales</a>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Ejercicios</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/leaves-5610361_1920.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/image.jpg" alt="">
+                            <p>Ver los ejercios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/water-5917708_1920.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/image.jpg" alt="">
+                            <p>Ver los ejercios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/bee-6127510_1920.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/image.jpg" alt="">
+                            <p>Ver los ejercios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/common-blue-6126462_1920.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/image.jpg" alt="">
+                            <p>Ver los ejercios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/desert-4940300_1920.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/image.jpg" alt="">
+                            <p>Ver los ejercios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/desk-593327_1920.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/image.jpg" alt="">
+                            <p>Ver los ejercios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/escritorio.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/image.jpg" alt="">
+                            <p>Ver los ejercios</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/laptop-336373_1920.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/image.jpg" alt="">
+                            <p>Ver los ejercios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo">que dicen nuestros clientes</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/face.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sapiente?</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/face2.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sapiente?</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros servicios</h2>
+                <div class="servicios-cont">
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion2.jpg" alt="">
+                        <h3 class="Name"></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptas.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion3.jpg" alt="">
+                        <h3 class="Name"></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptas.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/ilustracion1.jpg" alt="">
+                        <h3 class="Name"></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="contend-footer">
+                <h4>Telefono</h4>
+                <p>987</p>
+            </div>
+            <div class="contend-footer">
+                <h4>Email</h4>
+                <p>987</p>
+            </div>
+            <div class="contend-footer">
+                <h4>Localizacion</h4>
+                <p>987</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Calculo Desing | Andres Perez</h2>
+        <h2 class="titulo-final">&copy; Calculo Desing | Camilo Yali</h2>
+        <h2 class="titulo-final">&copy; Calculo Desing | Nicol Candia</h2>
+        <h2 class="titulo-final">&copy; Calculo Desing | Johhen Vergara</h2>
+    </footer>
+</body>
+
+</html>
